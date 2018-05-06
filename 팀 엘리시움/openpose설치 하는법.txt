@@ -1,0 +1,8 @@
+1.cmd창(권리자권한 실행)들어간다.
+
+2.C:\에설치하기위해 경로를 C:\로 바꾼후git clone opensose주소 치고 엔터누른다.
+
+3.깔아지면 c:\openpose로 들어가서 git checkout windows후 엔터누른다.
+
+4.openpose 폴더들어가서 windows->download_3rdparty_and_odels 클릭해서 다운로드
+
