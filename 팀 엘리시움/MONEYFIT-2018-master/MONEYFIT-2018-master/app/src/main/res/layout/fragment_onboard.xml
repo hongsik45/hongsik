@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/onboard_image"
+        android:layout_width="match_parent"
+        android:layout_height="350dp" />
+
+    <LinearLayout
+        android:id="@+id/onboard_text_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:orientation="vertical"
+        android:background="@drawable/btn_round"
+        android:layout_marginTop="335dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/onboard_main_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/content_horizontal_margin"
+            android:paddingEnd="@dimen/content_horizontal_margin"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/onboard_guide_message"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/onboard_text_layout"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/activated_text_color"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/onboard_start"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="시작"
+        android:background="@drawable/btn_round_activated_color"
+        android:layout_margin="@dimen/content_horizontal_margin"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

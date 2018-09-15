@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">MONEYFIT</string>
+    <string name="first_execution">hi_client</string>
+    <string name="status">d23fef2d</string>
+    <string name="toast_invalid">restricted access</string>
+    <string name="id_k">id</string>
+    <string name="nick_k">nickname</string>
+    <string name="thumb_k">thumbnail</string>
+    <string name="folder">folder</string>
+
+    <string name="money">money</string>
+    <string name="rank">rank</string>
+    <string name="start">start</string>
+    <string name="allow">allow</string>
+    <string name="boost">BOOST</string>
+    <string name="code">code</string>
+    <string name="reward">상금 %1$s만 원</string>
+    <string name="period">%1$d Days | %2$d X %3$d set</string>
+    <string name="mangement_buy_id">id</string>
+    <string name="mangement_buy_item_id">itemId</string>
+    <string name="mangement_buy_price">price</string>
+    <string name="mangement_buy_url">http://52.79.233.165/requestBuy.php</string>
+    <string name="mangement_buy">구매하기</string>
+    <string name="mangement_buy_cancel">취소</string>
+    <string name="mangement_withdraw">인출하기</string>
+    <string name="money_data_url">http://52.79.233.165/requestMoneyData.php</string>
+    <string name="mangement_item_id_1000">15215621</string>
+    <string name="mangement_item_id_3000">35453217</string>
+    <string name="mangement_item_id_5000">55458484</string>
+    <string name="mangement_item_id_10000">19545641</string>
+    
+    <!-- String about Main bottom CardView-->
+    <string name="bottom_card_show_my_page">마이페이지</string>
+    <string name="bottom_card_show_prize_management">상금관리</string>
+
+    <string name="my_page_header_text">마이페이지</string>
+    <string name="my_page_my_money">내 적립금</string>
+    <string name="my_page_phone_number">휴대폰 번호</string>
+    <string name="my_page_my_recommend_code">내 추천코드</string>
+    <string name="my_page_enter_recommend_code">추천인 코드 입력</string>
+    <string name="my_page_enter_guide_text">추천인 코드를 입력하고\n하트를 얻으세요!</string>
+    <string name="my_page_confirm">확인</string>
+
+    <!-- String about rank -->
+    <string name="rank_header_text">순위 보기</string>
+
+
+    <string name="settings_header_text">설정</string>
+    <string name="settings_notice_text">공지사항</string>
+    <string name="settings_guide_text">사용방법</string>
+    <string name="settings_contact">문의하기</string>
+    <string name="settings_push_alarm">푸쉬 알람</string>
+    <string name="settings_sound">사운드</string>
+    <string name="settings_logout">로그아웃</string>
+    <string name="settings_version_info">버전정보</string>
+    
+    <string name="onboard_first_main_text">운동해서 돈벌자</string>
+    <string name="onboard_second_main_text">일주일동안 진행되는 챌린지</string>
+    <string name="onboard_third_main_text">사용 방법</string>
+    <string name="onboard_fourth_main_text">상금 획득</string>
+    
+    <string name="onboard_guide_first_text">머니핏은 운동 리워딩\n(rewarding) 앱입니다.</string>
+    <string name="onboard_guide_second_text">챌린지는 항상\n일요일 00:00시에 시작됩니다.</string>
+    <string name="onboard_guide_third_text">핸드폰을 고정하고, 전면\n카메라에 전신이 나오는지\n확인합니다.</string>
+    <string name="onboard_guide_fourth_text">일주일에 4일 이상\n운동 성공 시,\n상금을 얻습니다.</string>
+
+    <string-array name="days_of_week">
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+        <item>Sun</item>
+    </string-array>
+
+    <string name="register_user_url">http://52.79.233.165/registerUser.php</string>
+    <string name="week_data_url">http://52.79.233.165/getWeekData.php</string>
+    <string name="rank_data_url">http://52.79.233.165/getRankData.php</string>
+    <string name="image_handling_url">http://52.79.233.165/imageHandler.php</string>
+    <string name="end_date_url">http://52.79.233.165/getEndDate.php</string>
+    <string name="alert_url">http://52.79.233.165/alertMeasurementFinished.php</string>0
+    <string name="check_url">http://52.79.233.165/checkIsFinished.php</string>
+    <string name="check_network_status">인터넷 연결에 실패했습니다. 인터넷 연결 상태를 확인 후 다시 시도해주세요.</string>
+    <string name="wait_result">측정 결과를 분석 중입니다.\n잠시만 기다려주세요..</string>
+    <string name="main_timer_text_format">남은시간 %1$d일 %2$d시간 %3$d분 %4$d초</string>
+    <string name="main_recommendation_text_format">추천 코드 : %1$s</string>
+    <string name="loading_text">%1$d %2$s</string>
+
+    <string name="start_dialog_types_of_exercise">운동 종류 선택</string>
+    <string name="start_dialog_start">START</string>
+    <string name="start_dialog_guide">Guide</string>
+
+    <string-array name="exercise_list">
+        <item>Squat</item>
+        <item>Push up</item>
+        <item>lorem ipsum</item>
+        <item>lorem ipsum</item>
+        <item>lorem ipsum</item>
+        <item>lorem ipsum</item>
+        <item>lorem ipsum</item>
+    </string-array>
+
+    <string name="exercise_push_up">Push up</string>
+    <string name="exercise_squat">Squat</string>
+
+    <string name="camera_error">error</string>
+    <string name="request_permission">permission</string>
+    <string name="toast_no_permission">권한이 없습니다. 이용하시려면 권한을 허용해주세요.</string>
+
+</resources>

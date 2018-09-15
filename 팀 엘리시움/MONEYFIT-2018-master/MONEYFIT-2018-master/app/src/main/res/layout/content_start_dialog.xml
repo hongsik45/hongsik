@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="@dimen/margin_eight"
+        app:cardElevation="@dimen/card_elevation"
+        app:cardBackgroundColor="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/start_dialog_types_of_exercise"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"/>
+            
+            
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/start_dialog_exercise_spinner"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/round_little"
+                android:popupBackground="@drawable/round_little"
+                android:spinnerMode="dropdown"
+                style="@style/SpinnerTheme"/>
+
+            <ImageButton
+                android:id="@+id/start_dialog_close_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_close_black_24dp"
+                android:background="@color/transparent"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/margin_eight"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_below="@id/start_dialog_exercise_spinner"
+                android:layout_marginTop="@dimen/margin_sixteen">
+
+                <Button
+                    android:id="@+id/start_dialog_guide_button"
+                    android:layout_width="90dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/btn_round_not_filled"
+                    android:layout_margin="@dimen/margin_four"
+                    android:text="@string/start_dialog_guide"
+                    android:textColor="@color/dialog_text_color"/>
+
+                <Button
+                    android:id="@+id/start_dialog_start_button"
+                    android:layout_width="90dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/btn_round_dark_gray"
+                    android:layout_margin="@dimen/margin_four"
+                    android:text="@string/start_dialog_start"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

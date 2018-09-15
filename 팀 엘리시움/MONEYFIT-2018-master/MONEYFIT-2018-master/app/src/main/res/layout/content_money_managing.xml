@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MoneyManagingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="56"
+        android:background="#5E5E5E"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="5dp"
+            android:layout_height="39dp"
+
+            android:layout_weight="0.15"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/manage_back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.6"
+            android:gravity="left"
+
+            android:padding="3dp"
+            android:text="상금관리"
+            android:textColor="#eedd82"
+            android:textSize="13pt"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="64"
+        android:background="#857AFC"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.6"
+            android:orientation="vertical"
+
+            android:paddingHorizontal="3dp"
+            android:paddingVertical="2dp"
+
+
+
+            >
+
+            <TextView
+
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+
+                android:gravity="left"
+                android:text="운동한보람! 뿌듯한 상금!"
+                android:textColor="#ffffff"
+                android:textSize="8pt"
+
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="left"
+                android:text="5만원 이상부터 출금가능"
+
+                android:textColor="#ffffff"
+                android:textSize="5pt" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/withdraw"
+            android:layout_width="85dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_eight"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="@dimen/small_height"
+            android:background="@drawable/btn_boost_background"
+            android:text="@string/mangement_withdraw"/>
+
+        <!-- <ImageView
+
+             android:id="@+id/withdraw"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="0.4"
+             android:src="@drawable/withdraw" />
+
+ -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="32"
+        android:background="#857AFC"
+
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+
+
+            android:src="@drawable/manage_coin" />
+
+        <TextView
+            android:id="@+id/currentmoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_marginLeft="19dp"
+
+
+
+            android:gravity="left"
+            android:text="20000"
+            android:textColor="#ffffff"
+            android:textSize="7pt"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="380">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="2">
+
+
+            <!--그리드레이아웃 -->
+
+            <LinearLayout
+                android:id="@+id/money1000"
+                android:layout_width="0dp"
+                android:layout_height="189dp"
+                android:layout_columnWeight="0.5"
+
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+                <!--money1000 -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_weight="0.75">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="135dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        app:cardCornerRadius="8dp">
+
+                        <ImageView
+                            android:id="@+id/moneyh"
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+
+                            android:background="@drawable/manage_background2" />
+                    </android.support.v7.widget.CardView>
+
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:layout_width="113dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+
+                    android:layout_marginRight="45dp"
+
+                    android:layout_weight="0.1"
+
+
+                    android:src="@drawable/manage_line" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="9dp"
+                    android:layout_weight="0.3"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="116dp"
+                        android:layout_height="15dp"
+
+
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="0.4"
+
+                        android:gravity="bottom"
+
+
+                        android:textColor="#685AF5"
+                        android:text="1000캐쉬"
+                        android:textSize="7pt"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.8"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+
+                            android:layout_marginLeft="30dp"
+
+                            android:src="@drawable/manage_coin" />
+
+                        <TextView
+                            android:layout_width="113dp"
+                            android:layout_height="match_parent"
+
+                            android:layout_marginLeft="4dp"
+
+                          android:gravity="bottom"
+                          android:paddingBottom="2dp"
+                          android:text="1300"
+                          android:textSize="7pt"
+                          android:textStyle="bold" />
+
+
+                  </LinearLayout>
+
+
+              </LinearLayout>
+
+
+          </LinearLayout>
+
+
+          <LinearLayout
+              android:id="@+id/money3000"
+              android:layout_width="0dp"
+              android:layout_height="189dp"
+              android:layout_columnWeight="0.5"
+
+              android:layout_margin="10dp"
+              android:orientation="vertical">
+              <!--money1000 -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_weight="0.75">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="135dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        app:cardCornerRadius="8dp">
+
+                        <ImageView
+                            android:id="@+id/moneyth"
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+
+                            android:background="@drawable/manage_background2" />
+                    </android.support.v7.widget.CardView>
+
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:layout_width="113dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+
+                    android:layout_marginRight="45dp"
+
+                    android:layout_weight="0.1"
+
+
+                    android:src="@drawable/manage_line" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="9dp"
+                    android:layout_weight="0.3"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="116dp"
+                        android:layout_height="15dp"
+
+
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="0.4"
+
+
+                             android:gravity="bottom"
+
+                             android:textColor="#685AF5"
+
+                             android:text="3000캐쉬"
+                             android:textSize="7pt"
+                             android:textStyle="bold" />
+
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="0dp"
+                             android:layout_weight="0.8"
+                             android:orientation="horizontal">
+
+                             <ImageView
+                                 android:layout_width="15dp"
+                                 android:layout_height="15dp"
+
+                                 android:layout_marginLeft="30dp"
+
+                                 android:src="@drawable/manage_coin" />
+
+                             <TextView
+                                 android:layout_width="113dp"
+                                 android:layout_height="match_parent"
+
+                                 android:layout_marginLeft="4dp"
+
+                                        android:gravity="bottom"
+                                        android:paddingBottom="2dp"
+                                        android:text="3900"
+                                        android:textSize="7pt"
+                                        android:textStyle="bold" />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/money5000"
+                            android:layout_width="0dp"
+                            android:layout_height="189dp"
+                            android:layout_columnWeight="0.5"
+
+                            android:layout_margin="10dp"
+                            android:orientation="vertical">
+                            <!--money1000 -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_weight="0.75">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="135dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        app:cardCornerRadius="8dp">
+
+                        <ImageView
+                            android:id="@+id/moneyfh"
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+
+                            android:background="@drawable/manage_background2" />
+                    </android.support.v7.widget.CardView>
+
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:layout_width="113dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+
+                    android:layout_marginRight="45dp"
+
+                    android:layout_weight="0.1"
+
+
+                    android:src="@drawable/manage_line" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="9dp"
+                    android:layout_weight="0.3"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="116dp"
+                        android:layout_height="15dp"
+
+
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="0.4"
+
+
+                        android:gravity="bottom"
+
+                        android:textColor="#685AF5"
+                        android:text="5000캐쉬"
+                        android:textSize="7pt"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.8"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+
+                            android:layout_marginLeft="30dp"
+
+                            android:src="@drawable/manage_coin" />
+
+                        <TextView
+                            android:layout_width="113dp"
+                            android:layout_height="match_parent"
+
+                            android:layout_marginLeft="4dp"
+
+                            android:gravity="bottom"
+                            android:paddingBottom="2dp"
+                            android:text="6500"
+                            android:textSize="7pt"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/money10000"
+                android:layout_width="0dp"
+                android:layout_height="189dp"
+                android:layout_columnWeight="0.5"
+
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+                <!--money1000 -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_weight="0.75">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="135dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        app:cardCornerRadius="8dp">
+
+                        <ImageView
+                            android:id="@+id/moneytenh"
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+
+                            android:background="@drawable/manage_background2" />
+                    </android.support.v7.widget.CardView>
+
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:layout_width="113dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+
+                    android:layout_marginRight="45dp"
+
+                    android:layout_weight="0.1"
+
+
+                    android:src="@drawable/manage_line" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="9dp"
+                    android:layout_weight="0.3"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="116dp"
+                        android:layout_height="15dp"
+
+
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="0.4"
+
+
+                        android:gravity="bottom"
+
+                        android:textColor="#685AF5"
+                        android:text="10000캐쉬"
+                        android:textSize="7pt"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.8"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+
+                            android:layout_marginLeft="30dp"
+
+                            android:src="@drawable/manage_coin" />
+
+                        <TextView
+                            android:layout_width="113dp"
+                            android:layout_height="match_parent"
+
+                            android:layout_marginLeft="4dp"
+
+                            android:gravity="bottom"
+                            android:paddingBottom="2dp"
+                            android:text="13000"
+                            android:textSize="7pt"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

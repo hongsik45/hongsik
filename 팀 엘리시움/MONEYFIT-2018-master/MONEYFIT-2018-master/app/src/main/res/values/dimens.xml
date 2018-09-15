@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_four">4dp</dimen>
+    <dimen name="margin_six">6dp</dimen>
+    <dimen name="margin_eight">8dp</dimen>
+    <dimen name="margin_ten">10dp</dimen>
+    <dimen name="margin_sixteen">16dp</dimen>
+    <dimen name="content_horizontal_margin">16dp</dimen>
+    <dimen name="middle_width">100dp</dimen>
+    <dimen name="small_height">24dp</dimen>
+
+    <dimen name="bottom_card_down_distance">80dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="header_height">60dp</dimen>
+    <dimen name="start_button_size">120dp</dimen>
+</resources>
